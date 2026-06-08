@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initModals();
   initHeroSparks();
   initConfettiEffect();
+  initScrollReveal();
 });
 
 /* ==========================================================================
@@ -584,3 +585,43 @@ styleSheet.innerText = `
   }
 `;
 document.head.appendChild(styleSheet);
+
+/* ==========================================================================
+   10. Плавная анимация прокрутки (Scroll Reveal observer)
+   ========================================================================== */
+function initScrollReveal() {
+  const elementsToReveal = document.querySelectorAll(
+    '.service-card, .product-card, .blog-card, .calc-container, .hero-content > *, .about-photo-card, .about-visual, .contact-card, .contacts-info, .section-header > *'
+  );
+
+  elementsToReveal.forEach((el) => {
+    el.classList.add('scroll-reveal');
+    
+    // Пытаемся автоматически сопоставить задержку на основе позиции в сетке
+    const parent = el.parentElement;
+    if (parent && (parent.classList.contains('grid-3') || parent.classList.contains('grid-2') || parent.classList.contains('grid-4') || parent.classList.contains('calc-grid'))) {
+      const children = Array.from(parent.children);
+      const childIndex = children.indexOf(el);
+      if (childIndex > 0 && childIndex < 5) {
+        el.classList.add(`reveal-delay-${childIndex}`);
+      }
+    }
+  });
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.12
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  elementsToReveal.forEach(el => observer.observe(el));
+}

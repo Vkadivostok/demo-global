@@ -1891,3 +1891,61 @@ button {
     justify-content: center;
   }
 }
+
+/* --- Premium Scroll Reveal Effects --- */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* --- Button Shimmer Effect --- */
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: 0.75s;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.btn:hover::after {
+  left: 125%;
+  opacity: 1;
+  transition: 0.75s ease-in-out;
+}
+
+/* --- Card Hover Glow Enhancements --- */
+.service-card:hover {
+  box-shadow: 0 20px 40px -15px rgba(249, 115, 22, 0.15);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -15px rgba(14, 165, 233, 0.15);
+}
+
+.calc-container:hover {
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
+}
