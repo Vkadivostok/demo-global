@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог компании ООО Глобал | Полезные статьи о фундаментах и резке металла</title>
+  <meta name="description" content="Статьи, рекомендации, инструкции от инженеров завода ООО «Глобал» Уфа. Как выбрать винтовые сваи, особенности лазерной резки и проектирования металлоконструкций.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- --- Header / Nav --- -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper">
+        <svg class="logo-svg" viewBox="0 0 32 32">
+          <polygon points="16,2 28,9 28,23 16,30 4,23 4,9" stroke="#64748b" fill="none"/>
+          <circle cx="16" cy="16" r="6" stroke="#f97316" fill="none"/>
+          <line x1="16" y1="2" x2="16" y2="30" stroke="#f97316" stroke-dasharray="2 2"/>
+        </svg>
+        <div class="logo-text">
+          ГЛОБАЛ
+          <span>Винтовые Сваи & Металл</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="catalog.html" class="nav-link">🔩 Сваи</a></li>
+          <li><a href="about.html" class="nav-link">🏢 О компании</a></li>
+          <li><a href="blog.html" class="nav-link active">📰 Блог</a></li>
+          <li><a href="contacts.html" class="nav-link">📍 Контакты</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="tel:+73471234567" class="phone-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+            +7 (347) 123-45-67
+          </a>
+          <button class="btn btn-primary" onclick="openModal('callback-modal')">Перезвонить мне</button>
+        </div>
+      </nav>
+
+      <button class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- --- Header / Intro --- -->
+  <section class="section section-secondary" style="padding-bottom: 3.5rem;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 0;">
+        <span class="subtitle">База знаний</span>
+        <h1>Полезные статьи и новости компании</h1>
+        <p>Наши инженеры делятся опытом расчета нагрузок фундаментов, тонкостями металлообработки и секретами долговечности винтовых свай.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Blog Grid --- -->
+  <section class="section">
+    <div class="container grid-3">
+      <!-- Article 1 -->
+      <article class="blog-card">
+        <div class="blog-visual">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+          </svg>
+          <div class="badge badge-orange" style="position: absolute; top: 1rem; left: 1rem;">Фундаменты</div>
+        </div>
+        <div class="blog-info">
+          <div class="blog-meta">
+            <span>📅 04 Июня 2026</span>
+            <span>⏱️ 5 мин чтения</span>
+          </div>
+          <h3>Как правильно рассчитать диаметр и длину винтовых свай?</h3>
+          <p>Разбираем ключевые параметры для расчета: глубину промерзания почвы в Уфе, несущую способность грунтов на участке и статические нагрузки от стен дома.</p>
+          <a href="#" class="blog-link">Читать полностью →</a>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="blog-card">
+        <div class="blog-visual">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 21l8.904-4.452L18 21l1.5-1.5V15h-4.5l-5.187.904zM21 3h-6v6h6V3zM9 3H3v6h6V3zM9 15H3v6h6v-6z" />
+          </svg>
+          <div class="badge badge-orange" style="position: absolute; top: 1rem; left: 1rem;">Лазерная резка</div>
+        </div>
+        <div class="blog-info">
+          <div class="blog-meta">
+            <span>📅 28 Мая 2026</span>
+            <span>⏱️ 4 мин чтения</span>
+          </div>
+          <h3>Преимущества оптоволоконной лазерной резки металла</h3>
+          <p>Сравниваем лазерный раскрой с плазменной резкой и штамповкой. Почему лазер ЧПУ экономит до 20% материала и сокращает время сборки металлоконструкций.</p>
+          <a href="#" class="blog-link">Читать полностью →</a>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="blog-card">
+        <div class="blog-visual">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2" />
+          </svg>
+          <div class="badge badge-orange" style="position: absolute; top: 1rem; left: 1rem;">Металлообработка</div>
+        </div>
+        <div class="blog-info">
+          <div class="blog-meta">
+            <span>📅 15 Мая 2026</span>
+            <span>⏱️ 6 мин чтения</span>
+          </div>
+          <h3>Металлоконструкции по ГОСТ: стандарты качества сварки</h3>
+          <p>Как проверяются сварные соединения несущих балок и ферм на нашем заводе. Ультразвуковой контроль дефектов и важность паспортизации изделий.</p>
+          <a href="#" class="blog-link">Читать полностью →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-wrapper" style="color: white; margin-bottom: 1rem;">
+          <svg class="logo-svg" viewBox="0 0 32 32" style="stroke: white;">
+            <polygon points="16,2 28,9 28,23 16,30 4,23 4,9" stroke="#ffffff" fill="none"/>
+            <circle cx="16" cy="16" r="6" stroke="#f97316" fill="none"/>
+            <line x1="16" y1="2" x2="16" y2="30" stroke="#f97316" stroke-dasharray="2 2"/>
+          </svg>
+          <div class="logo-text" style="color: white;">
+            ГЛОБАЛ
+            <span style="color: var(--text-muted);">Винтовые Сваи & Металл</span>
+          </div>
+        </a>
+        <p>Производство и профессиональный монтаж винтовых фундаментов, производство металлоконструкций и услуги ЧПУ лазерного раскроя листового металла в Республике Башкортостан.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Разделы сайта</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">🔩 Сваи</a></li>
+          <li><a href="about.html">🏢 О компании</a></li>
+          <li><a href="blog.html">📰 Блог</a></li>
+          <li><a href="contacts.html">📍 Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Услуги</h3>
+        <ul class="footer-links">
+          <li><a href="catalog.html">Монтаж свай под ключ</a></li>
+          <li><a href="about.html#machinery">Несущие металлоконструкции</a></li>
+          <li><a href="about.html#laser">Лазерная резка металла</a></li>
+          <li><a href="about.html#production">Производственные мощности</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Контакты завода</h3>
+        <ul class="footer-contacts-list">
+          <li class="footer-contact-item">
+            📍 г. Уфа, ул. Индустриальная, д. 28, корп. 3
+          </li>
+          <li class="footer-contact-item">
+            📞 +7 (347) 123-45-67
+          </li>
+          <li class="footer-contact-item">
+            ✉️ info@global-ufa.ru
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="footer-copyright">
+        <span>© 2026 ООО «Глобал» г. Уфа. Все права защищены.</span>
+        <span>Копирование материалов разрешено только при наличии обратной ссылки.</span>
+      </div>
+      <div class="footer-legal-links">
+        <a href="legal/privacy.html">Политика конфиденциальности</a>
+        <a href="legal/consent.html">Согласие на сбор персональных данных</a>
+        <a href="legal/agreement.html">Пользовательское соглашение</a>
+        <a href="legal/cookie.html">Использование cookie</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- Callback Modal --- -->
+  <div class="modal-overlay" id="callback-modal">
+    <div class="modal-window">
+      <button class="modal-close-btn" onclick="closeModal('callback-modal')">×</button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Заказать звонок специалиста</h3>
+          <p>Оставьте свои контакты, и мы перезвоним вам в течение 15 минут.</p>
+        </div>
+        <form id="call-form" onsubmit="handleFormSubmit(event, 'callback-modal')">
+          <div class="form-group">
+            <input type="text" class="form-input" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <input type="tel" class="form-input" placeholder="Номер телефона" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить запрос</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

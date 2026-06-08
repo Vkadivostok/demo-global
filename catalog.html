@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог винтовых свай в Уфе | Цены и размеры ООО Глобал</title>
+  <meta name="description" content="Каталог строительных винтовых свай от производителя ООО «Глобал» Уфа. Купить сваи СВС диаметром 57, 76, 89, 108, 133 мм по ценам завода с установкой под ключ.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- --- Header / Nav --- -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper">
+        <svg class="logo-svg" viewBox="0 0 32 32">
+          <polygon points="16,2 28,9 28,23 16,30 4,23 4,9" stroke="#64748b" fill="none"/>
+          <circle cx="16" cy="16" r="6" stroke="#f97316" fill="none"/>
+          <line x1="16" y1="2" x2="16" y2="30" stroke="#f97316" stroke-dasharray="2 2"/>
+        </svg>
+        <div class="logo-text">
+          ГЛОБАЛ
+          <span>Винтовые Сваи & Металл</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="catalog.html" class="nav-link active">🔩 Сваи</a></li>
+          <li><a href="about.html" class="nav-link">🏢 О компании</a></li>
+          <li><a href="blog.html" class="nav-link">📰 Блог</a></li>
+          <li><a href="contacts.html" class="nav-link">📍 Контакты</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="tel:+73471234567" class="phone-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+            +7 (347) 123-45-67
+          </a>
+          <button class="btn btn-primary" onclick="openModal('callback-modal')">Перезвонить мне</button>
+        </div>
+      </nav>
+
+      <button class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- --- Section Header --- -->
+  <section class="section section-secondary" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 0;">
+        <span class="subtitle">Элементы каталога</span>
+        <h1>Винтовые сваи от завода-производителя</h1>
+        <p>Мы изготавливаем свайную продукцию по ГОСТу из толстостенных стальных труб. Ниже приведен ассортимент поставляемых свай. Выберите интересующий диаметр для фильтрации.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Catalog Layout --- -->
+  <section class="section" style="padding-top: 2rem;">
+    <div class="container catalog-layout">
+      <!-- Filter Sidebar -->
+      <aside class="catalog-sidebar">
+        <h3 class="filter-title">Фильтр по диаметру</h3>
+        <div class="filter-group">
+          <h4>Выберите СВС:</h4>
+          <div class="filter-options">
+            <button class="filter-btn active" data-filter="all" onclick="filterCatalog('all', this)">Все размеры</button>
+            <button class="filter-btn" data-filter="57" onclick="filterCatalog('57', this)">СВС 57 мм (легкие)</button>
+            <button class="filter-btn" data-filter="76" onclick="filterCatalog('76', this)">СВС 76 мм (заборы, террасы)</button>
+            <button class="filter-btn" data-filter="89" onclick="filterCatalog('89', this)">СВС 89 мм (бани, дома)</button>
+            <button class="filter-btn" data-filter="108" onclick="filterCatalog('108', this)">СВС 108 мм (коттеджи)</button>
+            <button class="filter-btn" data-filter="133" onclick="filterCatalog('133', this)">СВС 133 мм (пром-объекты)</button>
+          </div>
+        </div>
+        <div style="background-color: var(--color-orange-light); border: 1px solid rgba(249, 115, 22, 0.2); border-radius: var(--radius-md); padding: 1.25rem; font-size: 0.8rem; line-height: 1.4; color: var(--text-secondary);">
+          💡 <strong>Нужна помощь?</strong> Воспользуйтесь нашим <a href="index.html#calculator" style="color: var(--color-orange); font-weight: 700;">калькулятором фундамента</a> на главной странице для точной оценки.
+        </div>
+      </aside>
+
+      <!-- Catalog List -->
+      <main class="catalog-list" id="catalog-products">
+        <!-- SV 57 -->
+        <div class="product-card" data-diameter="57">
+          <div class="product-visual">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <div class="badge badge-cyan" style="position: absolute; top: 1rem; left: 1rem;">СВС 57</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Винтовая свая СВС-57</h3>
+            <p class="product-desc">Предназначена для легких сооружений, ограждений из сетки рабицы, монтажа дорожных знаков, беседок и парников.</p>
+            <ul class="product-specs">
+              <li class="product-spec-item">
+                <span class="product-spec-label">Диаметр трубы:</span>
+                <span class="product-spec-val">57 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Толщина стенки:</span>
+                <span class="product-spec-val">3.0 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Диаметр лопасти:</span>
+                <span class="product-spec-val">200 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Несущая способность:</span>
+                <span class="product-spec-val">до 1.2 тонн</span>
+              </li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price">от 1 250 ₽ <span>/ шт.</span></div>
+              <button class="btn btn-primary btn-sm" style="padding: 0.6rem 1.25rem;" onclick="openOrderModal('СВС-57')">Заказать</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SV 76 -->
+        <div class="product-card" data-diameter="76">
+          <div class="product-visual">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <div class="badge badge-cyan" style="position: absolute; top: 1rem; left: 1rem;">СВС 76</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Винтовая свая СВС-76</h3>
+            <p class="product-desc">Оптимальна для ограждений из профнастила или штакетника, деревянных террас, легких хозблоков и настилов.</p>
+            <ul class="product-specs">
+              <li class="product-spec-item">
+                <span class="product-spec-label">Диаметр трубы:</span>
+                <span class="product-spec-val">76 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Толщина стенки:</span>
+                <span class="product-spec-val">3.5 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Диаметр лопасти:</span>
+                <span class="product-spec-val">250 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Несущая способность:</span>
+                <span class="product-spec-val">до 2.0 тонн</span>
+              </li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price">от 1 650 ₽ <span>/ шт.</span></div>
+              <button class="btn btn-primary btn-sm" style="padding: 0.6rem 1.25rem;" onclick="openOrderModal('СВС-76')">Заказать</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SV 89 -->
+        <div class="product-card" data-diameter="89">
+          <div class="product-visual">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <div class="badge badge-cyan" style="position: absolute; top: 1rem; left: 1rem;">СВС 89</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Винтовая свая СВС-89</h3>
+            <p class="product-desc">Используется для фундаментов бревенчатых бань, одноэтажных каркасных домов, пристроек, хозблоков и пирсов.</p>
+            <ul class="product-specs">
+              <li class="product-spec-item">
+                <span class="product-spec-label">Диаметр трубы:</span>
+                <span class="product-spec-val">89 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Толщина стенки:</span>
+                <span class="product-spec-val">3.5 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Диаметр лопасти:</span>
+                <span class="product-spec-val">250 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Несущая способность:</span>
+                <span class="product-spec-val">до 3.5 тонн</span>
+              </li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price">от 2 050 ₽ <span>/ шт.</span></div>
+              <button class="btn btn-primary" style="padding: 0.6rem 1.25rem;" onclick="openOrderModal('СВС-89')">Заказать</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SV 108 -->
+        <div class="product-card" data-diameter="108">
+          <div class="product-visual">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <div class="badge badge-cyan" style="position: absolute; top: 1rem; left: 1rem;">СВС 108</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Винтовая свая СВС-108</h3>
+            <p class="product-desc">Несущая основа для коттеджей из бруса, бревна, СИП-панелей, модульных зданий, ангаров и промышленных цехов.</p>
+            <ul class="product-specs">
+              <li class="product-spec-item">
+                <span class="product-spec-label">Диаметр трубы:</span>
+                <span class="product-spec-val">108 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Толщина стенки:</span>
+                <span class="product-spec-val">4.0 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Диаметр лопасти:</span>
+                <span class="product-spec-val">300 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Несущая способность:</span>
+                <span class="product-spec-val">до 5.0 тонн</span>
+              </li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price">от 2 450 ₽ <span>/ шт.</span></div>
+              <button class="btn btn-primary" style="padding: 0.6rem 1.25rem;" onclick="openOrderModal('СВС-108')">Заказать</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SV 133 -->
+        <div class="product-card" data-diameter="133">
+          <div class="product-visual">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <div class="badge badge-cyan" style="position: absolute; top: 1rem; left: 1rem;">СВС 133</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Винтовая свая СВС-133</h3>
+            <p class="product-desc">Тяжелые сваи для массивных двухэтажных деревянных/газобетонных коттеджей, промышленных эстакад, мостов и тяжелых опор.</p>
+            <ul class="product-specs">
+              <li class="product-spec-item">
+                <span class="product-spec-label">Диаметр трубы:</span>
+                <span class="product-spec-val">133 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Толщина стенки:</span>
+                <span class="product-spec-val">4.5 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Диаметр лопасти:</span>
+                <span class="product-spec-val">350-400 мм</span>
+              </li>
+              <li class="product-spec-item">
+                <span class="product-spec-label">Несущая способность:</span>
+                <span class="product-spec-val">до 7.5 тонн</span>
+              </li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price">от 3 100 ₽ <span>/ шт.</span></div>
+              <button class="btn btn-primary" style="padding: 0.6rem 1.25rem;" onclick="openOrderModal('СВС-133')">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-wrapper" style="color: white; margin-bottom: 1rem;">
+          <svg class="logo-svg" viewBox="0 0 32 32" style="stroke: white;">
+            <polygon points="16,2 28,9 28,23 16,30 4,23 4,9" stroke="#ffffff" fill="none"/>
+            <circle cx="16" cy="16" r="6" stroke="#f97316" fill="none"/>
+            <line x1="16" y1="2" x2="16" y2="30" stroke="#f97316" stroke-dasharray="2 2"/>
+          </svg>
+          <div class="logo-text" style="color: white;">
+            ГЛОБАЛ
+            <span style="color: var(--text-muted);">Винтовые Сваи & Металл</span>
+          </div>
+        </a>
+        <p>Производство и профессиональный монтаж винтовых фундаментов, производство металлоконструкций и услуги ЧПУ лазерного раскроя листового металла в Республике Башкортостан.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Разделы сайта</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">🔩 Сваи</a></li>
+          <li><a href="about.html">🏢 О компании</a></li>
+          <li><a href="blog.html">📰 Блог</a></li>
+          <li><a href="contacts.html">📍 Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Услуги</h3>
+        <ul class="footer-links">
+          <li><a href="catalog.html">Монтаж свай под ключ</a></li>
+          <li><a href="about.html#machinery">Несущие металлоконструкции</a></li>
+          <li><a href="about.html#laser">Лазерная резка металла</a></li>
+          <li><a href="about.html#production">Производственные мощности</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Контакты завода</h3>
+        <ul class="footer-contacts-list">
+          <li class="footer-contact-item">
+            📍 г. Уфа, ул. Индустриальная, д. 28, корп. 3
+          </li>
+          <li class="footer-contact-item">
+            📞 +7 (347) 123-45-67
+          </li>
+          <li class="footer-contact-item">
+            ✉️ info@global-ufa.ru
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="footer-copyright">
+        <span>© 2026 ООО «Глобал» г. Уфа. Все права защищены.</span>
+        <span>Копирование материалов разрешено только при наличии обратной ссылки.</span>
+      </div>
+      <div class="footer-legal-links">
+        <a href="legal/privacy.html">Политика конфиденциальности</a>
+        <a href="legal/consent.html">Согласие на сбор персональных данных</a>
+        <a href="legal/agreement.html">Пользовательское соглашение</a>
+        <a href="legal/cookie.html">Использование cookie</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- MODAL 1: Order Product --- -->
+  <div class="modal-overlay" id="order-modal">
+    <div class="modal-window">
+      <button class="modal-close-btn" onclick="closeModal('order-modal')">×</button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Заявка на сваи <span id="modal-pile-name" style="color: var(--color-orange);">СВС-108</span></h3>
+          <p>Оставьте ваши контакты. Наш менеджер перезвонит вам для уточнения длины свай, объема заказа и расчета доставки.</p>
+        </div>
+        <form id="order-form" onsubmit="handleFormSubmit(event, 'order-modal')">
+          <div class="form-group">
+            <input type="text" class="form-input" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-input" placeholder="Телефон (WhatsApp)" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <input type="number" class="form-input" placeholder="Количество штук (необязательно)" min="1">
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить заказ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- --- MODAL 2: Callback Request --- -->
+  <div class="modal-overlay" id="callback-modal">
+    <div class="modal-window">
+      <button class="modal-close-btn" onclick="closeModal('callback-modal')">×</button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Заказать звонок специалиста</h3>
+          <p>Оставьте свои контакты, и мы свяжемся с вами в течение 15 минут.</p>
+        </div>
+        <form id="call-form" onsubmit="handleFormSubmit(event, 'callback-modal')">
+          <div class="form-group">
+            <input type="text" class="form-input" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <input type="tel" class="form-input" placeholder="Номер телефона" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить запрос</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
