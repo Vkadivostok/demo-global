@@ -85,14 +85,18 @@
       
       <div class="hero-visual">
         <div class="hero-image-container">
-          <div class="hero-image-placeholder with-bg">
+          <div class="hero-image-placeholder" style="overflow: hidden;">
+            <!-- Background video loop -->
+            <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; opacity: 0.28;">
+              <source src="images/laser_cutting.mp4" type="video/mp4">
+            </video>
             <!-- Sparks canvas inside placeholder to wow the user -->
-            <canvas class="sparks-canvas" id="hero-sparks"></canvas>
-            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <canvas class="sparks-canvas" id="hero-sparks" style="z-index: 2;"></canvas>
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" style="z-index: 3;">
               <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.67 2.67 0 1021 17.25l-5.83-5.83M11.42 15.17l-3.75-3.75M11.42 15.17l2.92-2.92M13.5 3.91V2.25M6.16 6.16L4.99 4.99M3.91 13.5H2.25M6.16 20.84l-1.17 1.17M20.84 6.16l1.17-1.17" />
             </svg>
-            <h3>Высокотехнологичный цех</h3>
-            <p>Современные оптоволоконные лазерные станки ЧПУ мощностью до 6 кВт и автоматизированные линии сварки свайных лопастей в Уфе.</p>
+            <h3 style="z-index: 3;">Высокотехнологичный цех</h3>
+            <p style="z-index: 3;">Современные оптоволоконные лазерные станки ЧПУ мощностью до 6 кВт и автоматизированные линии сварки свайных лопастей в Уфе.</p>
           </div>
         </div>
         
