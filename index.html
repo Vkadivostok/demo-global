@@ -85,7 +85,7 @@
       
       <div class="hero-visual">
         <div class="hero-image-container">
-          <div class="hero-image-placeholder">
+          <div class="hero-image-placeholder with-bg">
             <!-- Sparks canvas inside placeholder to wow the user -->
             <canvas class="sparks-canvas" id="hero-sparks"></canvas>
             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
@@ -320,14 +320,8 @@
       </div>
 
       <div class="about-image-side">
-        <div class="about-photo-card">
-          <div class="hero-image-placeholder">
-            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9s2.015-9 4.5-9m0 0a9.015 9.015 0 019 9c0 1.39-.314 2.706-.877 3.88M12 3a9.015 9.015 0 00-9 9c0 1.39.314 2.706.877 3.88" />
-            </svg>
-            <h3>Промышленная база г. Уфа</h3>
-            <p>Наш цех расположен в индустриальном районе Уфы. Полный производственный цикл — от нарезки трубы до нанесения антикоррозийного эпоксидного состава.</p>
-          </div>
+        <div class="about-photo-card" style="height: 100%; overflow: hidden; border-radius: var(--radius-xl); box-shadow: var(--shadow-xl);">
+          <img src="images/pesokGL.jpeg" alt="Промышленная база завода ООО Глобал в Уфе" style="width: 100%; height: 100%; object-fit: cover; min-height: 380px;">
         </div>
         <div class="about-experience-badge">
           <div class="about-experience-num">100%</div>

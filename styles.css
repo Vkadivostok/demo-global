@@ -548,6 +548,11 @@ button {
   position: relative;
 }
 
+.hero-image-placeholder.with-bg {
+  background: linear-gradient(135deg, rgba(9, 13, 22, 0.88) 0%, rgba(30, 41, 59, 0.88) 100%), url('images/laser_cutting.png') no-repeat center center;
+  background-size: cover;
+}
+
 /* Custom interactive sparks on hero placeholder */
 .sparks-canvas {
   position: absolute;
